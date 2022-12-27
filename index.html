@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body class="blurred">
     <header>
       <div class="header-left">
         <img
@@ -527,11 +527,12 @@
 
     <template id="day-card-template">
       <div class="day-card">
-        <img alt="" data-icon class="weather-icon" />
+        <img data-icon class="weather-icon" />
         <div class="day-card-day" data-date></div>
         <div><span data-temp></span><span>&deg;</span></div>
       </div>
     </template>
+
     <template id="hour-row-template">
       <tr class="hour-row">
         <td>
@@ -549,27 +550,25 @@
             <div><span data-temp></span><span>&deg;</span></div>
           </div>
         </td>
-
         <td>
           <div class="info-group">
-            <div class="label">Fl Temp</div>
+            <div class="label">FL Temp</div>
             <div><span data-fl-temp></span><span>&deg;</span></div>
           </div>
         </td>
-
         <td>
           <div class="info-group">
-            <div class="label" data-wind>Wind</div>
-            <div data-wind><span class="value-sub-info">mph</span></div>
+            <div class="label">Wind</div>
+            <div>
+              <span data-wind></span><span class="value-sub-info">mph</span>
+            </div>
           </div>
         </td>
-
         <td>
           <div class="info-group">
             <div class="label">Precip</div>
             <div>
-              <span data-precip></span><span>&deg;</span
-              ><span class="value-sub-info">in</span>
+              <span data-precip></span><span class="value-sub-info">in</span>
             </div>
           </div>
         </td>
